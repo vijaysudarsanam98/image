@@ -1,0 +1,18 @@
+This Project is an Image Upload Project
+
+Database Used :Postgres
+Migration Command used:Knex migrate:latest
+Controlllers
+
+Login: In one api a user can sign in & signup, both the cases the bearer token generated.
+        This is used as Oauth , in which Google sign in can be  done on Client end.
+
+        Image Api: The image Contains Routes Post,Get & Delete.
+                    Put is Avoided because there would not be any use.
+                    Multer is used to uplaod the image
+
+
+                    Share Api is avoided because it would be more easier to use on cleint side , because we need to use raabitmq.
+
+Application to run:node server
+Unit test is avoided since only login can be done.
